@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="music_app.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar flex-disp">
+        <div class="logo"><h1>Coalescence</h1></div>
+
+        <div class="nav-contents-box">
+            <a href="#" class="nav-contents">Discover</a>
+            <a href="#" class="nav-contents">My Playlist</a>
+        </div>
+        <div class="search-bar">
+
+<label for="Search-bar"><i class="fa-solid fa-search"></i></label>
+        <input type="text" id="Search-bar" placeholder="   Search Music...">
+    </div>
+
+    </div>
+
+
+    <div class="main-container flex-disp">
+        <div class="top-main-box flex-disp">
+<!-- this will have two parts, right and left -->
+
+<div class="top-right-box">
+
+    <!-- first songs-playing-box -->
+    <div class="songs-playing-box">
+        <div class="songs-playing-content">
+            <h2>Playlist</h2>
+            <!-- <div class="songs-playing-icons flex-disp">
+            <i class="fa-solid fa-music"></i>
+            <i class="fa-solid fa-music"></i>
+            <i class="fa-solid fa-music"></i> -->
+            <div class="songs-playing-icons flex-disp">
+                <h4 class="active"><span></span><i class="fa-solid fa-music"></i>Playlist</h4>
+                <h4><span></span><i class="fa-solid fa-music"></i> Last listening </h4>
+                <h4><span></span><i class="fa-solid fa-music"></i>   Recommended</h4>
+            </div>
+        </div>
+        </div>
+
+        <div class="menu-song">
+            <li class="songItem flex-disp">
+                <span>01</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play" id="1"></i>
+            </li>
+            <li class="songItem flex-disp">
+                <span>02</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play" id="2"></i>
+            </li>
+            <li class="songItem flex-disp">
+                <span>03</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play" id="3"></i>
+            </li>
+            <li class="songItem flex-disp">
+                <span>04</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play" id="4"></i>
+            </li>
+            <li class="songItem flex-disp">
+                <span>05</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play" id="5"></i>
+            </li>
+            <li class="songItem flex-disp">
+                <span>06</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play " id="6"></i>
+            </li>
+            <li class="songItem flex-disp">
+                <span>07</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play " id="7"></i>
+            </li>
+            <li class="songItem flex-disp">
+                <span>08</span>
+                <img width="34px"src="" alt="cant load">
+                <h5>Chokra Jawaan <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+                <i class="fa-solid fa-circle-play" id="8"></i>
+            </li>
+        </div>
+    </div>
+<div class="top-left-box flex-disp">
+    
+    <!-- the left side has three parts: the top new songs discover part,
+    the popular songs part,
+    the playlists part -->
+    
+    <!-- <div class="taglines">
+        <div class="tagline1">Discover Songs for Every Mood!</div>
+        <div class="tagline2">New playlists everyday....</div>
+        <div class="tagline3">Get your premium Subscription Now</div>
+        <button class="premium">Premium</button>
+    </div> -->
+    <div class="popular-songs">
+
+        <div class="popular-heading flex-disp">
+            <div class="popular">Popular songs</div>
+            <div class="popular-arrows flex-disp">
+                <i class="fa-solid fa-arrow-left" id="Pop_song_left"></i>
+                <i class="fa-solid fa-arrow-right" id="Pop_song_right"></i>
+            </div>
+        </div>
+        <div class="popular-song-collection" id="Pop_song">
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="9"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="10"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="11"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="12"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="13"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="14"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="15"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="16"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="17"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="18"></i>
+
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+          
+        </div>
+<br><br><br>
+    </div>
+
+    <div class="playlist-box" id="playlist_box">
+        <div class="playlist-heading flex-disp">
+            <div class="playlist">For You</div>
+            <div class="playlist-arrows flex-disp">
+                <i class="fa-solid fa-arrow-left" id="playlist_box_left"></i>
+                <i class="fa-solid fa-arrow-right" id="playlist_box_right"></i>
+            </div>
+        </div>
+        <div class="playlist-song-collection" id="playlist_song_box">
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="19"></i>
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="20"> </i>
+                </div> 
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="21"></i>
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="22"></i>
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="23"></i>
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="24"></i>
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="25"></i>
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+            <li class="songItem">
+                <div class="img-play-playlist">
+                    <img width="34px"src="" alt="cant load">
+                    <i class="fa-solid fa-circle-play" id="26"></i>
+                </div>
+                <h5>Chokra Jawaan  <br>
+                <div class="subtitle">Sunidhi Chauhan</div>
+                </h5>
+            </li>
+         
+            
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="artists-box hide"></div>
+</div>
+
+
+
+            </div>
+
+            <div class="bottom-player-box">
+                <div class="wavee flex-disp">
+                    <div class="wavee1"></div>
+                    <div class="wavee1"></div>
+                    <div class="wavee1"></div>
+                </div>
+                <img src="playlists/anime/anime1.JPEG" alt="cant load" id="master_player_poster">
+                <h5 id="master-player-title">
+                    Fukashigi no Carte
+                    <div class="subtitle">Selphius</div>
+                </h5>
+
+                <div class="icon">
+                  
+                    <i class="fa-solid fa-backward-step master-icon" id="back"></i>
+                    <!-- <i class="fa-solid fa-pause  master-icon hide" id="masterpause"></i> -->
+                    <i class="fa-solid fa-play master-icon" id="masterplay"></i>
+                    <i class="fa-solid fa-forward-step master-icon" id="next"></i>
+                    <!-- <i class="fa-solid fa-cloud-arrow-down master-icon"></i> -->
+                </div>
+                <span id="currentStart" class="currentStart">0:00</span>
+        
+                <div class="bar">
+                    <input type="range" id="seek" min="0" max="100">
+                  
+                </div>
+                <span id="currentEnd" class="currentStart">3:59</span>
+
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="bar">
+                    <input type="range" id="vol" min="0" max="100">
+                </div>
+            </div>
+
+    </div>
+    <script src="music_app.js"></script>
+</body>
+</html>
